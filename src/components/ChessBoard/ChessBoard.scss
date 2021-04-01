@@ -1,0 +1,31 @@
+.ChessBoard {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('https://images.chesscomfiles.com/chess-themes/boards/green/150.png ');
+    border-radius: 3px;
+    width: 520px;
+    height: 520px;
+    position:relative;
+    user-select: none;
+    display: block;
+    touch-action: none;
+}
+
+.chess-board {
+    border-radius: 3px;
+    width: 520px;
+    height: 520px;
+    position:relative;
+    display: block;
+
+}
+
+.coordinates {
+    position: absolute;
+    z-index: 1;
+    font-weight: 500;
+    height: 100%;
+    line-height: 1;
+    width: 100%;
+    font-family: sans-serif;
+}

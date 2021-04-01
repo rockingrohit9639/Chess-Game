@@ -1,0 +1,67 @@
+.piece {
+    background-size:100%;
+    cursor: pointer;
+    cursor: grab;
+    cursor: -webkit-grab;
+    height: 12.5%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    touch-action: none;
+    width: 12.5%;
+    will-change: transform;
+    touch-action: none;
+    user-select: none;
+
+}
+.dragging {
+    cursor:grabbing;
+    z-index: 2;
+}
+
+@for $i from 0 through 7 {
+    $translate: ($i - 1) * 100%;
+    .square-#{$i}1{
+        transform: translate($translate,700%);
+        transition:  transform .5s ease-in-out;
+    }
+    .square-#{$i}2{
+        transform: translate($translate,600%);
+        transition:  transform .5s ease-in-out;
+    }
+    .square-#{$i}3{
+        transform: translate($translate,500%);
+        transition:  transform .5s ease-in-out;
+    }
+    .square-#{$i}4{
+        transform: translate($translate,400%);
+        transition:  transform .5s ease-in-out;
+    }
+    .square-#{$i}5{
+        transform: translate($translate,300%);
+        transition:  transform .5s ease-in-out;
+    }
+    .square-#{$i}6{
+        transform: translate($translate,200%);
+        transition:  transform .5s ease-in-out;
+    }
+    .square-#{$i}7{
+        transform: translate($translate,100%);
+        transition:  transform .5s ease-in-out;
+    }
+    .square-#{$i}8{
+        transform: translate($translate,0);
+        transition:  transform .5s ease-in-out;
+    }
+}
+
+@for $i from 0 through 8 {
+    $translate: (8 - $i) * 100%;
+    .square-8#{$i} {
+        transform: translate(700%, $translate);
+        transition:  transform .5s ease-in-out;
+    }
+    
+}
+
